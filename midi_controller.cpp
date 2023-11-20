@@ -11,7 +11,6 @@
 #include <fstream>
 #include <alsa/asoundlib.h>
 
-
 //ALSA wrappers
 snd_seq_event_t ev;
 
@@ -125,10 +124,6 @@ private:
 
 
 //EVENT NUMBER FINDER
-#include <iostream>
-#include <fstream>
-#include <string>
-
 std::string findEventDevice(const std::string& deviceName) {
     std::ifstream devicesFile("/proc/bus/input/devices");
     std::string line;
